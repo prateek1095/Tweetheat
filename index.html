@@ -18,6 +18,7 @@
   <title>Tweet the Heat</title>
 
   <script src="public/lib/jquery/dist/jquery.min.js"></script>
+  <script src="public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="public/lib/angular/angular.min.js"></script>
   <script src="public/lib/moment/min/moment.min.js"></script>
   <script src="public/lib/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -47,6 +48,10 @@
       </div>
       <button type="submit" style="margin: 1%;" class="btn btn-primary">Search</button>
     </form>
+    <div class="alert alert-danger fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Danger!</strong> Enter a tag or a query to be searched.
+    </div>
     <div class="alert alert-info" role="alert" ng-if="loading"><b>{{ loading }}</b></div>
     <div id="map" class="map"></div>
   </div>
