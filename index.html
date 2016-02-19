@@ -48,9 +48,9 @@
       </div>
       <button type="submit" style="margin: 1%;" class="btn btn-primary">Search</button>
     </form>
-    <div class="alert alert-danger fade in">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Danger!</strong> Enter a tag or a query to be searched.
+    <div class="alert alert-danger fade in" ng-if="true">
+       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       <strong>Pro Tip!!</strong> Enter a tag or a query to be searched.
     </div>
     <div class="alert alert-info" role="alert" ng-if="loading"><b>{{ loading }}</b></div>
     <div id="map" class="map"></div>
