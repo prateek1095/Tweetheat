@@ -56,6 +56,7 @@ app.controller('search', function ($scope, $http) {
     query = $scope.query;
     if (!query) {
       alert("Enter a tag or a query");
+      return;
     }
 
     var startDatetime, endDatetime;
