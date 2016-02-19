@@ -95,7 +95,7 @@ app.controller('search', function ($scope, $http) {
 
     // Clear current points in map
     $scope.data.clear();
-    $scope.loading = 'Loading...'
+    $scope.loading = 'Loading the heat points...'
     $scope.loaded = false;
     timezoneOffset = new Date().getTimezoneOffset();
     $http.jsonp('http://loklak.org/api/search.json?callback=JSON_CALLBACK&q=' + query + '&timezoneOffset=' + timezoneOffset)
