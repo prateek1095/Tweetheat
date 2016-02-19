@@ -28,12 +28,15 @@
 </head>
 
 <body>
+  <div class="text-danger">
+      <h3>See the heat wave and follow the latest trends</h3>
+  </div>
   <div ng-controller="search">
     <form ng-submit="search()">
       <div class="has-error">
       <input type="text" class="form-control" placeholder="Search query" ng-model="query" style="width: 50%; margin: 1%;">
       </div>
-      <div class="has-warning">
+      <div class="has-info">
       <input date-range-picker class="form-control date-picker" placeholder="Tweets interval (optional)" type="text" ng-model="datePicker" style="width: 50%; margin: 1%;"/>
       </div>
       <div class="has-success">
