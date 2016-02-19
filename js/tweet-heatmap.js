@@ -54,9 +54,12 @@ app.controller('search', function ($scope, $http) {
 
   $scope.search = function() {
     query = $scope.query;
+    $('#myAlert').alert('close');
     if (!query) {
+      alert('Enter a query to be searched');
       return;
     }
+
 
     var startDatetime, endDatetime;
     sinceDatetime = '';
