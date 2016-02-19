@@ -54,7 +54,10 @@ app.controller('search', function ($scope, $http) {
 
   $scope.search = function() {
     query = $scope.query;
+
+    //closing the alert bar on clicking 
     $('#myAlert').alert('close');
+
     if (!query) {
       alert('Enter a query to be searched');
       return;
