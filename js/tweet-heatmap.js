@@ -1,6 +1,6 @@
 var app = angular.module('tweet-heatmap', ['daterangepicker']);
 
-app.controller('search', function ($scope, $http) {
+app.controller('search', function($scope,$http,$modal) {
   $scope.datePicker = {startDate: null, endDate: null};
   $scope.loaded = false;
 
@@ -55,11 +55,13 @@ app.controller('search', function ($scope, $http) {
   $scope.search = function() {
     query = $scope.query;
 
-    //closing the alert bar on clicking 
+    //closing the alert bar on clicking search button
     $('#myAlert').alert('close');
 
     if (!query) {
-      alert('Enter a query to be searched');
+      var modalInstance = $modal.open({
+        templateUrl:'index.html',
+      });
       return;
     }
 
