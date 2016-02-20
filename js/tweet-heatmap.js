@@ -59,8 +59,8 @@ app.controller('search', function($scope,$http) {
     $('#myAlert').alert('close');
 
     if (!query) {
-        alert("ghgh") ;   
-        return;
+        alert("ghgh");
+        return;   
     }
 
 

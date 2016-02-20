@@ -37,6 +37,11 @@
       <div class="has-error">
       <input type="text" class="form-control" placeholder="Search query" ng-model="query" style="width: 50%; margin: 1%;">
       </div>
+          <div class="alert alert-danger fade in" id="myAlert">
+       <a href="#"  class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       <strong>Pro Tip!!</strong> Enter a tag or a query to be searched.
+      </div>
+
       <div class="has-info">
       <input date-range-picker class="form-control date-picker" placeholder="Tweets interval (optional)" type="text" ng-model="datePicker" style="width: 50%; margin: 1%;"/>
       </div>
@@ -48,11 +53,7 @@
       </div>
       <button type="submit" style="margin: 1%;" class="btn btn-primary">Search</button>
     </form>
-    <div class="alert alert-danger fade in" id="myAlert">
-       <a href="#"  class="close" data-dismiss="alert" aria-label="close">&times;</a>
-       <strong>Pro Tip!!</strong> Enter a tag or a query to be searched.
-    </div>
-  
+
   <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
