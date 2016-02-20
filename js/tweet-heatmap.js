@@ -1,6 +1,6 @@
 var app = angular.module('tweet-heatmap', ['daterangepicker']);
 
-app.controller('search', function($scope,$http,$modal) {
+app.controller('search', function($scope,$http) {
   $scope.datePicker = {startDate: null, endDate: null};
   $scope.loaded = false;
 
@@ -59,7 +59,7 @@ app.controller('search', function($scope,$http,$modal) {
     $('#myAlert').alert('close');
 
     if (!query) {
-            
+        alert("ghgh") ;   
         return;
     }
 
