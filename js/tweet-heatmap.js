@@ -59,10 +59,8 @@ app.controller('search', function($scope,$http,$modal) {
     $('#myAlert').alert('close');
 
     if (!query) {
-      var modalInstance = $modal.open({
-        templateUrl:'index.html',
-      });
-      return;
+            
+        return;
     }
 
 
