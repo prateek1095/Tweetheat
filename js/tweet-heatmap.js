@@ -60,7 +60,9 @@ app.controller('search', function($scope,$http) {
 
     if (!query) {
         alert("ghgh");
-        return;   
+        return;
+        window.location.reload();
+        console.log("rferf");   
     }
 
 
