@@ -57,6 +57,7 @@ app.controller('search', function($scope,$http) {
 
     //closing the alert bar on clicking search button
     $('#myAlert').alert('close');
+    $('#myAlert2').alert('close');
 
     if (!query) {
         alert("Input a string of query to see the heat!!");
