@@ -52,11 +52,12 @@ app.controller('search', function($scope,$http) {
     return hours + ':' + minutes;
   }
 
-      //closing the alert bar automatically after 2 secondes
+      //closing the alert bar automatically after 5 seconds
       $("#myAlert").fadeTo(5000, 500).slideUp(500, function(){
       $("#myAlert").alert('close');
     });
 
+      //closing the alert bar automatically after 7 seconds
     $("#myAlert2").fadeTo(7000, 500).slideUp(500, function(){
       $("#myAlert2").alert('close');
     });
