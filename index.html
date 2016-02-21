@@ -46,6 +46,12 @@
       <div class="has-error">
       <input date-range-picker class="form-control date-picker" placeholder="Tweets interval (optional)" type="text" ng-model="datePicker" style="width: 50%; margin: 1%;"/>
       </div>
+
+      <div class="alert alert-danger fade in" id="myAlert">
+       <a href="#"  class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       <strong>Pro Tip!!</strong> Enter the time intervals to get the desired data.
+      </div>
+
       <div class="has-error">
       <input id="timepicker1" placeholder="Since time" class="form-control" data-provide="timepicker" ng-model="sinceTime" data-template="modal" data-minute-step="1" data-modal-backdrop="true" type="text" style="width: 50%; margin: 1%;"/>
       </div>
