@@ -52,12 +52,14 @@ app.controller('search', function($scope,$http) {
     return hours + ':' + minutes;
   }
 
+      //closing the alert bar automatically after 2 secondes
+      $("#myAlert").fadeTo(2000, 500).slideUp(500, function(){
+      $("#myAlert").alert('close');
+    });
+
+
   $scope.search = function() {
     query = $scope.query;
-
-    //closing the alert bar on clicking search button
-    $('#myAlert').alert('close');
-    $('#myAlert2').alert('close');
 
     if (!query) {
         alert("Input a string of query to see the heat!!");
