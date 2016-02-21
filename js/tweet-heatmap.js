@@ -58,7 +58,7 @@ app.controller('search', function($scope,$http) {
     });
 
       //closing the alert bar automatically after 7 seconds
-    $("#myAlert2").fadeTo(7000, 500).slideUp(500, function(){
+    $("#myAlert2").fadeTo(7000, 500).slideDown(500, function(){
       $("#myAlert2").alert('close');
     });
 
