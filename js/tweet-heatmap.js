@@ -67,6 +67,9 @@ app.controller('search', function($scope,$http) {
   $scope.search = function() {
     query = $scope.query;
 
+      $("#myAlert").alert('close');
+      $("#myAlert2").alert('close');
+
     if (!query) {
         alert("Input a string of query to see the heat!!");
         window.location.reload();
