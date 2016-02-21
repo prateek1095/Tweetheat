@@ -57,6 +57,11 @@ app.controller('search', function($scope,$http) {
       $("#myAlert").alert('close');
     });
 
+    $("#myAlert2").fadeTo(3000, 500).slideUp(500, function(){
+      $("#myAlert2").alert('close');
+    });
+
+
 
   $scope.search = function() {
     query = $scope.query;
