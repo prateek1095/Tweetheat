@@ -53,11 +53,11 @@ app.controller('search', function($scope,$http) {
   }
 
       //closing the alert bar automatically after 2 secondes
-      $("#myAlert").fadeTo(2000, 500).slideUp(500, function(){
+      $("#myAlert").fadeTo(5000, 500).slideUp(500, function(){
       $("#myAlert").alert('close');
     });
 
-    $("#myAlert2").fadeTo(3000, 500).slideUp(500, function(){
+    $("#myAlert2").fadeTo(7000, 500).slideUp(500, function(){
       $("#myAlert2").alert('close');
     });
 
