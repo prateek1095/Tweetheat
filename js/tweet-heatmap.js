@@ -70,11 +70,11 @@ app.controller('search', function($scope,$http) {
           query = $scope.query;
 
           if (!query) {
-             $scope.search=function(){
+            $scope.search=function(){          
               $scope.showModal = !$scope.showModal;
-            }
-            console.log("reloading the page");   
-            return;
+              console.log("Modal opened");
+              return;
+          }
         }
 
 
