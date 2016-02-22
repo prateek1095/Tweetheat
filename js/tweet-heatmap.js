@@ -73,8 +73,8 @@ app.controller('search', function($scope,$http) {
             $scope.search=function(){          
               $scope.showModal = !$scope.showModal;
               console.log("Modal opened");
-              return;
           }
+          return;
         }
 
 
