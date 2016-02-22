@@ -58,23 +58,23 @@ app.controller('search', function($scope,$http) {
     });
 
       //closing the alert bar automatically after 5 seconds
-    $("#myAlert2").fadeTo(5000, 500).slideUp(500, function(){
+      $("#myAlert2").fadeTo(5000, 500).slideUp(500, function(){
       $("#myAlert2").alert('close');
     });
 
      $scope.showModal = false;
 
-           
+    $scope.search = function() {
 
-      $scope.search = function() {
           query = $scope.query;
 
-          if (!query) {
-            $scope.search=function(){          
+          
+            $scope.search=function(){
+            if(!query){          
               $scope.showModal = !$scope.showModal;
               console.log("Modal opened");
+              return;
           }
-          return;
         }
 
 
