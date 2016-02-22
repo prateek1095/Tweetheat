@@ -62,14 +62,13 @@ app.controller('search', function($scope,$http) {
       $("#myAlert2").alert('close');
     });
     
-          $scope.showModal = false;
+
 
       $scope.search = function() {
           query = $scope.query;
 
           if (!query) {
-            $scope.showModal = !$scope.showModal;  
-            window.location.reload();
+
             console.log("reloading the page");   
             return;
         }
@@ -141,6 +140,13 @@ app.controller('search', function($scope,$http) {
             console.log(err);
           });
         } 
+});
+
+app.controller('ModalCtrl',  function($scope){
+            $scope.showModal = false;
+            $scope.search=function(){
+              $scope.showModal = !$scope.showModal;
+            }
 });
 
 app.directive('modal', function () {
