@@ -61,8 +61,24 @@
       </div>
       
       <button type="submit" style="margin: 1%;" class="btn btn-danger">Search</button>
-    
+       
+    <modal title="Login form" visible="showModal">
+      <form role="form">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" />
+        </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" />
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </modal>
+  
+      
     </form>
+
 
       <div class="alert alert-danger fade in" id="myAlert2" style="margin:1%">
        <a href="#"  class="close" data-dismiss="alert" aria-label="close">&times;</a>
