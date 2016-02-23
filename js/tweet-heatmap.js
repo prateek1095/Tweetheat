@@ -52,13 +52,13 @@ app.controller('search', function($scope,$http) {
     return hours + ':' + minutes;
   }
 
-      //closing the alert bar automatically after 3 seconds
-      $("#myAlert").fadeTo(3000, 500).slideUp(500, function(){
+      //closing the alert bar automatically after 4 seconds
+      $("#myAlert").fadeTo(4000, 500).slideUp(500, function(){
       $("#myAlert").alert('close');
     });
 
-      //closing the alert bar automatically after 5 seconds
-      $("#myAlert2").fadeTo(5000, 500).slideUp(500, function(){
+      //closing the alert bar automatically after 6 seconds
+      $("#myAlert2").fadeTo(6000, 500).slideUp(500, function(){
       $("#myAlert2").alert('close');
     });
 
@@ -69,12 +69,10 @@ app.controller('search', function($scope,$http) {
           query = $scope.query;
 
           
-            $scope.search=function(){
-            if(!query){          
+        if(!query){   
               $scope.showModal = !$scope.showModal;
               console.log("Modal opened");
               return;
-          }
         }
 
 
