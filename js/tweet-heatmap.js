@@ -66,10 +66,9 @@ app.controller('search', function($scope,$http) {
 
     $scope.search = function() {
 
-          query = $scope.query;
+        query = $scope.query;
 
-          
-        if(!query){   
+          if(!query){   
               $scope.showModal = !$scope.showModal;
               console.log("Modal opened");
               return;
